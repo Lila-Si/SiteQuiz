@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+body {
+  font-family: "EB Garamond";
+  background-image: url("images/ecole.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Div de boite timer et conteneur questions */
+
+.divOne {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.timer {
+  width: 4em;
+  height: 1.5em;
+  margin: 3em auto;
+  border-radius: 15px;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.conteneur_intro{
+    width: 45em;
+    height: 10em;
+    margin: auto;
+    margin-top: -2em;
+    border-radius: 25px;
+    padding: 2em;
+}
+
+.conteneur {
+  width: 45em;
+  height: 20em;
+  margin: auto;
+  margin-top: -2em;
+  border-radius: 25px;
+  padding: 3em 5em 12em 5em;
+}
+
+
+/* Quizz (titre, questions, réponses...) */
+
+h1 {
+  padding-bottom: 1em;
+}
+
+.score{
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+form {
+  padding: 0 2em;
+}
+
+fieldset {
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+legend {
+  padding: 0 1em;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.divTwo {
+  padding: 0.2em;
+}
+
+.divTwo label {
+  display: inline-flex;
+  justify-content: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background-color: white;
+  width: 20em;
+  transition: all 0.5s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.divTwo label:hover {
+  border-color: #888;
+  background-color: #f5f5f5;
+}
+
+.divTwo input[type="radio"]:checked + label {
+  background-color: #ddaef5;
+  border-color: #ddaef5;
+  color: white;
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+button {
+    font-family: 'EB Garamond';
+    font-size: 1em;
+    padding: 0.5em 2em;
+    margin: 0.2em;
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.button_intro:hover{
+    background-color: #ddaef5;
+}
+
+button:hover{
+    background-color: #ADADAD;
+    cursor: pointer;
+}
+
+button:focus{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
